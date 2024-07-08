@@ -13,3 +13,36 @@ def add_nums():
     result = add(a, b)
 
     return str(result)
+
+
+@app.route("/sub")
+def sub_nums():
+    "Subtract a and b numbers."
+
+    a = int(request.args.get("a"))
+    b = int(request.args.get("b"))
+    result = sub(a, b)
+
+    return str(result)
+
+
+@app.route("/mult")
+def mult_nums():
+    "Multiply a and b numbers."
+
+    a = int(request.args.get("a"))
+    b = int(request.args.get("b"))
+    result = mult(a, b)
+
+    return str(result)
+
+
+@app.route("/div")
+def div_nums():
+    "Divide a and b numbers."
+
+    a = int(request.args.get("a"))
+    b = int(request.args.get("b"))
+    result = div(a, b)
+
+    return str(result)
